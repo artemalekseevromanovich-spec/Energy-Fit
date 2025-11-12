@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EnergyFit — Фитнес клуб</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="dark">
+<header class="header">
+  <div class="container header-inner">
+    <h1 class="logo">Energy<span>Fit</span></h1>
+    <nav class="nav">
+      <a href="#home" class="active">Главная</a>
+      <a href="#trainers">Тренеры</a>
+      <a href="#schedule">Расписание</a>
+      <a href="#contacts">Контакты</a>
+      <label class="switch">
+        <input type="checkbox" id="themeToggle">
+        <span class="slider"></span>
+      </label>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section id="home" class="hero" style="background-image: url('https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=1600&q=80');">
+  <div class="hero-text">
+    <h2>Твоя энергия начинается здесь</h2>
+    <p>Присоединяйся к EnergyFit и измени свою жизнь уже сегодня!</p>
+    <a href="#contacts" class="btn">Записаться</a>
+  </div>
+</section>
+
+<section class="about container">
+  <h2>О клубе</h2>
+  <p>EnergyFit — это современный фитнес-клуб, созданный для тех, кто хочет быть сильнее, выносливее и увереннее в себе.
+У нас — просторные залы, современное оборудование, зоны для кардио, силовых и функциональных тренировок.
+
+Наши тренеры — профессионалы с многолетним опытом, которые помогут подобрать индивидуальную программу и достичь желаемого результата.
+Мы ценим комфорт и мотивацию, поэтому в клубе предусмотрены раздевалки, зона отдыха и спортивное кафе.
+
+
+
+EnergyFit — это не просто спортзал, а место, где рождается энергия, вдохновение и уверенность в собственных силах.</p>
+</section>
+
+<section id="trainers" class="trainers container">
+  <h2>Наши тренеры</h2>
+  <div class="trainer-grid">
+    <div class="trainer-card">
+      <img src="img/trainer1.jpg" alt="Анна Смирнова">
+      <h3>Анна Смирнова</h3>
+      <p>Фитнес и пилатес. Более 8 лет опыта.</p>
+    </div>
+    <div class="trainer-card">
+      <img src="img/trainer2.jpg" alt="Игорь Ковалёв">
+      <h3>Игорь Ковалёв</h3>
+      <p>Силовые тренировки. Сертифицированный инструктор.</p>
+    </div>
+    <div class="trainer-card">
+      <img src="img/trainer3.jpg" alt="Елена Трофимова">
+      <h3>Елена Трофимова</h3>
+      <p>Йога и растяжка. Индивидуальный подход к каждому.</p>
+    </div>
+  </div>
+</section>
+
+<section id="schedule" class="schedule container">
+  <h2>Расписание занятий</h2>
+  <table>
+    <tr><th>День</th><th>Время</th><th>Занятие</th></tr>
+    <tr><td>Понедельник</td><td>09:00</td><td>Йога</td></tr>
+    <tr><td>Вторник</td><td>11:00</td><td>Кардио</td></tr>
+    <tr><td>Среда</td><td>18:00</td><td>Силовая</td></tr>
+    <tr><td>Четверг</td><td>10:00</td><td>Пилатес</td></tr>
+    <tr><td>Пятница</td><td>19:00</td><td>Фитнес Микс</td></tr>
+  </table>
+</section>
+
+<section id="contacts" class="contacts container">
+  <h2>Свяжитесь с нами</h2>
+  <form class="contact-form">
+    <input type="text" placeholder="Ваше имя" required>
+    <input type="email" placeholder="Email" required>
+    <textarea placeholder="Сообщение" required></textarea>
+    <button type="submit" class="btn">Отправить</button>
+  </form>
+  <div class="info">
+    <p> +7 (700) 123-45-67</p>
+    <p> energyfit@mail.ru</p>
+    <p> г. Алматы, ул. Назарбаева, 103</p>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <p>© 2025 EnergyFit. Все права защищены.</p>
+  </div>
+</footer>
+
+<script>
+const toggle = document.getElementById('themeToggle');
+toggle.addEventListener('change', ()=> document.body.classList.toggle('dark'));
+</script>
+</body>
+</html>
